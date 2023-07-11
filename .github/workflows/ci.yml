@@ -119,9 +119,9 @@ jobs:
                   flags: Apex
 
             # Housekeeping
-            - name: 'Delete scratch org'
-              if: always()
-              run: sf org delete scratch -p -o scratch-org
+            # - name: 'Delete scratch org'
+            #   if: always()
+            #   run: sf org delete scratch -p -o scratch-org
 
     trigger-packaging:
         runs-on: ubuntu-latest
